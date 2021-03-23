@@ -1,0 +1,169 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width:100%;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #161240;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.container{
+   
+    min-height: 55vh;
+    min-width:100vh;
+    background-color: #b5375b;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 50vh 40vh;
+    grid-template-rows: 1fr;
+}
+
+.info{
+    color:white;
+    text-align: center;
+    text-shadow: 2px 4px 9px black;
+}
+
+.info h1{
+    text-align: center;
+    margin: 35px;
+    padding: 5px;
+    font-size: 35px;
+    border-radius: 25px;
+    border: 2px solid white;
+}
+.info #dates{
+    margin-top: 90px;
+    font-size:35px;  
+}
+.info #times{
+    font-size: 25px;
+}
+
+/*----Right Side page-------------*/
+.mainpage{
+    width: 100%;
+    margin:10px;
+    margin-top: 25px;
+    padding: 10px;
+}
+.mainpage #inputField{
+    height: 30px;
+    width: 240px;
+    margin:5px;
+    font-size: 20px;
+    border-radius:3px;
+    border: none;
+}
+.mainpage #addtodo{
+    height:30px;
+    width: 40px;
+    margin-right:-10px;
+    margin-left: 2px;
+    background-color: white;
+    padding: 2px;
+    font-size: 18px;
+    font-weight: 600;
+}
+button:active{
+    background:linear-gradient(30deg,#b5375b,silver);
+    color: white;
+}
+.mainpage .to-dos{
+    margin: 5px;
+    width: 280px;
+    height: 300px;
+    color:white;
+    padding-left: 10px;
+    font-size: 20px;
+    overflow-y: scroll;
+}
+
+/*---------------Media Query---------------------*/
+@media only screen and (max-width:376px){
+  
+    .container{
+        min-height: 65vh;
+        min-width:100%;
+        
+        background-color: #b5375b;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 1fr;
+    }
+
+    .info h1{
+        margin-right: 65px;
+        padding: 5px;
+        font-size: 30px;
+        
+    }
+    .mainpage #inputField{
+        height: 30px;
+        min-width: 75px;
+        max-width: fit-content;
+        margin:5px;
+        font-size: 20px;
+    
+    }
+    .mainpage #addtodo{
+        height:35px;
+        width: 6px;
+        margin-left: 6px;   
+    }
+    .mainpage .to-dos{
+       line-height:15px;
+        width: 350px;
+        height: 300px;
+        color:white;
+        padding-left: 15px;
+        font-size: 25px;
+        overflow-y: scroll; 
+    }
+
+}
+
+@media only screen and (max-width:480px){
+   
+    .container{
+        margin-top: 12vh;
+        margin-left: 1vh;
+        min-height: 65vh;
+        min-width:100%;
+        background-color: #b5375b;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 1fr;
+    }
+    .mainpage #inputField{
+        height: 30px;
+        width: 300px;
+        margin:10px;
+        font-size: 20px;
+    
+    }
+    .mainpage #addtodo{
+        height:35px;
+        width: 60px;
+        margin-left: 6px;   
+    }
+    .mainpage .to-dos{
+       line-height:15px;
+        width: 350px;
+        height: 300px;
+        color:white;
+        padding-left: 15px;
+        font-size: 25px;
+        overflow-y: scroll;
+       
+    }
+    
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="info">
+            <h1>TO DO LIST</h1>
+         <p id="dates"></p>
+         <p id="times"></p>
+        </div>
+        <div class="mainpage">
+        <input type="text" id="inputField"><button id="addtodo">+</button>
+        <div class="to-dos" id="todoContainer">
+</div>
+
+        </div>
+
+    </div>
+
+    <script>
+        
+        setInterval(() => {
+            var d = new Date();
+            document.getElementById("dates").innerHTML = d.toDateString();
+            document.getElementById("times").innerHTML = "Time -&nbsp;   " +d.getHours()+":"+ d.getMinutes();
+        }, 1000)
+        </script>
+    <script src="./script.js"></script>
+    
+
+</body>
+</html>

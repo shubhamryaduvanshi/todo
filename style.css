@@ -130,6 +130,12 @@ button:active{
 
 }
 
+@media only screen and (max-width:410px){
+    .mainpage #inputField{
+        max-width:fit-content;
+    }
+}
+
 @media only screen and (max-width:480px){
    
     .container{
